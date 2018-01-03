@@ -1,12 +1,15 @@
 // Styling for the features section
 section.features {
+  color: white;
     .section-heading {
-        margin-bottom: 100px;
         h2 {
             margin-top: 0;
         }
         p {
             margin-bottom: 0;
+        }
+        hr{
+          border-color:white;
         }
     }
     .device-container,
