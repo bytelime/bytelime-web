@@ -5,11 +5,36 @@ const browserSync = require('browser-sync').create();
 const del = require('del');
 const wiredep = require('wiredep').stream;
 const runSequence = require('run-sequence');
+const gutil = require('gulp-util');
+const ftp = require( 'vinyl-ftp' );
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
 let dev = true;
+
+gulp.task( 'deploy', function () {
+
+    var conn = ftp.create( {
+        host:     'ftp.bytelime.com',
+        user:     'u405908604',
+        password: 'titopakotitopako00',
+        parallel: 10,
+        log:      gutil.log
+    } );
+
+    var globs = [
+        'dist/index.html'
+    ];
+
+    // using base = '.' will transfer everything to /public_html correctly
+    // turn off buffering in gulp.src for best performance
+
+    return gulp.src( globs, { base: '.', buffer: false, cwd: '/public_html' } )
+        .pipe( conn.newer( '/public_html' ) ) // only upload newer files
+        .pipe( conn.dest( '/public_html' ) );
+
+});
 
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.scss')

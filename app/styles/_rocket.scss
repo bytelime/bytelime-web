@@ -1,7 +1,11 @@
 // Styling for the features section
-section.features {
+section.rocket {
   color: white;
+  background: url('../images/bg-pattern.png'), $theme-secondary;
+  background: url('../images/bg-pattern.png'), -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
+  background: url('../images/bg-pattern.png'), linear-gradient(to left, $theme-secondary, $theme-tertiary);
     .section-heading {
+      margin-bottom: 32px;
         h2 {
             margin-top: 0;
         }
@@ -18,17 +22,17 @@ section.features {
         margin: 0 auto;
     }
     .device-container {
-        margin-bottom: 100px;
+        margin-bottom: 80px;
         @media(min-width: 992px) {
             margin-bottom: 0;
         }
     }
     .feature-item {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         text-align: center;
         h3 {
-            font-size: 30px;
+            font-size: 24px;
         }
         i {
             font-size: 80px;

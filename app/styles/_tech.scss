@@ -1,8 +1,7 @@
 // Styling for the call to action section
-section.cta {
+section.tech {
     position: relative;
     padding: 100px 0;
-    background-image: url("../images/bg-cta.jpg");
     background-position: center;
     @include background-cover;
     .cta-content {
@@ -35,7 +34,7 @@ section.cta {
         background-color: white;
     }
     .row{
-      margin-bottom: 15px;
+      margin-bottom: 25px;
     }
     .sticker{
       display: block;

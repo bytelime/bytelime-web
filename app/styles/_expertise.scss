@@ -1,7 +1,6 @@
 // Styling for the download section
-section.download {
+section.expertise {
     position: relative;
-    padding: 150px 0;
     h2 {
         font-size: 50px;
         margin-top: 0;
@@ -21,6 +20,9 @@ section.download {
                 margin-bottom: 0;
             }
         }
+    }
+    .row {
+      margin-top:  30px;
     }
     @media(min-width: 768px) {
         h2 {
