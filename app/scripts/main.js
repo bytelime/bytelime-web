@@ -40,3 +40,14 @@
   $(window).scroll(navbarCollapse);
 
 })(jQuery); // End of use strict
+var divs = $(".feature-item")
+
+var waypoint = new Waypoint({
+  element: divs[0],
+  handler: function(direction) {
+    //alert("caca");
+    $(divs[0]).removeAttr('hidden');
+    $(divs[0]).addClass("animated flipInX");
+  },
+  offset: '100%'
+})

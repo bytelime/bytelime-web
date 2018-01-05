@@ -24,16 +24,16 @@ gulp.task( 'deploy', function () {
     } );
 
     var globs = [
-        'dist/index.html'
+        'dist/futureIndex.html',
+        'dist/styles/**'
     ];
 
     // using base = '.' will transfer everything to /public_html correctly
     // turn off buffering in gulp.src for best performance
 
-    return gulp.src( globs, { base: '.', buffer: false, cwd: '/public_html' } )
-        .pipe( conn.newer( '/public_html' ) ) // only upload newer files
-        .pipe( conn.dest( '/public_html' ) );
-
+    return gulp.src( globs, { base: '.', buffer: false } )
+        //.pipe( conn.newer( '' ) ) // only upload newer files
+        .pipe( conn.dest( '' ) );
 });
 
 gulp.task('styles', () => {

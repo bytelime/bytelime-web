@@ -6,21 +6,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Bytelime SAS">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <title>Bytelime</title>
 
-
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"/>
-
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -31,6 +27,7 @@
     <link rel="stylesheet" href="styles/main.css"/>
     <!-- endbuild -->
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
   </head>
 
   <body id="page-top">
@@ -67,43 +64,34 @@
         <div class="row h-100">
           <div class="col-lg-7 my-auto">
             <div class="header-content mx-auto">
-              <h1 class="mb-5">
+              <h1 class="animated bounceInLeft">
                 Keep it fresh<br />Embrace details<br />Tito paco
               </h1>
             </div>
           </div>
-          <!-- <div class="col-lg-5 my-auto">
-            <div class="device-container">
-              <div class="device-mockup iphone6_plus portrait white">
-                <div class="device">
-                  <div class="screen">
-                    <img src="images/demo-screen-1.jpg" class="img-fluid" alt="">
-                  </div>
-                  <div class="button">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </header>
 
     <section class="text-center expertise" id="expertise">
-      <h2>Our expertise</h2>
+      <div class="section-heading text-center">
+        <h2>Our expertise</h2>
+        <p class="">What differenciates us from the pack</p>
+        <hr>
+      </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 item">
             <h3>La primera</h3>
             <i class="fas fa-camera-retro fa-5x"></i>
             <h5>Explain how this is the best thing of the country</h5>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 item">
             <h3>La second</h3>
             <i class="fas fa-microchip fa-5x"></i>
             <h5>This is also good doe, trust me.</h5>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 item">
             <h3>Third is the best</h3>
             <i class="fas fa-american-sign-language-interpreting fa-5x"></i>
             <h5>How about this one eh?</h5>
@@ -123,7 +111,7 @@
           <div class="col-lg-4 my-auto">
             <div class="container-fluid">
               <div class="row">
-                  <div class="feature-item">
+                  <div class="feature-item" hidden>
                     <i class="icon-screen-smartphone text-primary"></i>
                     <h3>1. Planning flight path</h3>
                     <p class="">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
@@ -234,11 +222,13 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/jquery.easing/js/jquery.easing.js"></script>
+    <script src="/bower_components/waypoints/lib/noframework.waypoints.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
 
     <!-- build:js(.tmp) scripts/main.js -->
     <script src="scripts/main.js"></script>
